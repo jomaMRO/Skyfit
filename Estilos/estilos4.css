@@ -1,0 +1,329 @@
+
+/* ---estilos generales--- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sarabun', sans-serif;
+  background-color: green;
+  /* Color de fondo para toda la página */
+  color: #333;
+  /* Color de texto predeterminado */
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: black;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: #A25A5A;
+}
+
+.seccion-titulo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* ---cabezera--- */
+.header {
+  background-color: #4D789D;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  max-height: 100px;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* .header .logo {
+  font-family: 'Bungee', cursive;
+  color: #7EABD2;
+  
+} */
+
+.header .logo img {
+  width: 105px; /* Ajusta el ancho de la imagen según tus preferencias */
+  max-height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+li#inicio {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .logo {
+  letter-spacing: 15px;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+} */
+
+.menu-icon {
+  display: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.navigation ul li a:hover {
+  background: #A25A5A;
+}
+
+
+
+
+
+/* ------Estilos para WhatsApp ------*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0); /* Color de fondo del ícono de WhatsApp */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+/* Estilos para la imagen del icono de WhatsApp */
+.whatsapp-icon img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+  object-fit: cover; /* La imagen se ajustará para cubrir todo el contenedor */
+}
+
+/* Estilos para la animación al pasar el mouse sobre el icono */
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse sobre él */
+}
+
+
+/* botoooon------------------------------------ */
+.banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Esto asegura que el banner ocupe al menos el 100% de la altura de la ventana */
+  position: relative;
+  overflow: hidden;
+}
+
+#video-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* -----botones -----*/
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
+  padding-top: 100px;
+  
+
+}
+
+.botones .container {
+  text-align: center; /* Centra el contenido horizontalmente dentro del contenedor */
+}
+
+ /* Estilos para el recuadro */
+ 
+ .recuadro {
+  font-family: 'Bungee', cursive;
+  width: 350px; /* Ancho ligeramente más largo */
+  padding: 20px;
+  background-color: #7EABD2;
+  border-radius: 5px;
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin: 20px auto;
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: center; /* Coloca el contenido en los extremos */
+  align-items: center; /* Centra verticalmente el contenido */
+  transition: all 0.3s ease; /* Agrega una animación de transición */
+}
+
+.recuadro:hover {
+  transform: scale(1.05); /* Escala el recuadro al hacer hover */
+  background-color: #A25A5A;
+}
+
+/* Estilos para el botón */
+.boton {
+  padding: 10px 20px;
+  background-color: #7EABD2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton:hover {
+  transform: scale(1.05); /* Escala el recuadro al hacer hover */
+  background-color: #A25A5A;
+}
+
+
+
+/* pie de pagina */
+
+footer {
+  min-height: 300px;
+}
+
+.footer-logo {
+  height: 50%;
+  width: 50%;
+  margin: 10px;
+}
+
+
+h5 {
+  font-size: 1.2rem; /* Tamaño del título Vínculos y Contacto */
+  color: #fff; /* Color del título */
+  margin-bottom: 10px; /* Espacio inferior entre título y lista */
+}
+
+ul {
+  list-style: none; /* Eliminar los puntos de lista */
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+ul li a {
+  text-decoration: none; /* Eliminar subrayado enlaces */
+  color: #aeaeae; /* Color del texto de enlace */
+  transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: #fff; /* Cambio de color al pasar el mouse */
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+  text-align: center; /* Alineación del texto en el centro */
+}
+
+  /* ---responsive--- */
+  @media only screen and (max-width: 900px){
+   
+    .header {
+      /* Modificar el tamaño vertical del header */
+      padding: 0.1rem 0;
+      max-height: 1000px
+
+    }
+  
+    .logo {
+      /* Modificar el tamaño de la fuente del logo si es necesario */
+      font-size: 1.2em;
+    }
+  
+    .slogan h2{
+      font-size: small;
+    }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 24px;
+    color: white;
+    
+  }
+  #icon-close {
+    display: none;
+  }
+  
+  #icon-open {
+    display: inline;
+  }
+  
+  .navigation{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .navigation ul{
+    display: none;
+  }
+  .navigation ul.show{
+    display: block;
+  
+  }
+  
+  .navigation ul li{
+    display: block;
+  }
+  .navigation ul li a{
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  
+  .navigation ul li a:hover {
+    background: #A25A5A;
+  }
+  }
+
+  @media only screen and (max-width: 640px){
+  .slogan {
+    padding-top: 100px;
+    height: 45vh; /* Ajusta esta altura según tus necesidades */
+  }
+   
+}

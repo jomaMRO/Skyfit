@@ -1,0 +1,285 @@
+/* ---estilos generales--- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: black;
+    color: #333; /* Color de texto predeterminado */
+  }
+
+.seccion-oscura{
+    color: white;
+    background-color: black;
+}
+  
+.seccion-clara{
+    color: black;
+    background-color: rgb(231, 260, 264);
+}
+
+.seccion-titulo{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+/* ---cabezera--- */
+.header {
+  background-color: #4D789D;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  max-height: 100px;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* .header .logo {
+  font-family: 'Bungee', cursive;
+  color: #7EABD2;
+  
+} */
+
+.header .logo img {
+  width: 105px; /* Ajusta el ancho de la imagen según tus preferencias */
+  max-height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+li#inicio {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .logo {
+  letter-spacing: 15px;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+} */
+
+.menu-icon {
+  display: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.navigation ul li a:hover {
+  background: #A25A5A;
+}
+
+
+
+
+
+
+
+
+/* ---WhatsApp ---*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0); /* Color de fondo del ícono de WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    z-index: 90;
+  }
+  
+  .whatsapp-icon img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; /* La imagen se ajustará para cubrir todo el contenedor */
+  }
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse sobre él */
+  }
+
+
+/* mostrador */
+  
+.mostrador{
+    padding-top: 200px;
+}
+.mostrador h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.mostrador .carouselExample{
+    margin: 30px;
+}
+.mostrador .carrusel{
+    margin-bottom: 30px;
+}
+
+  
+/* pie de pagina */
+
+footer {
+    min-height: 300px;
+}
+  
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+  
+  .iconos-redes-sociales{
+    padding-top: 20px;
+  }
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .iconos-redes-sociales a:hover i {
+    color: black;
+  }
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }
+
+
+
+  /* ---responsive--- */
+  @media only screen and (max-width: 900px){
+   
+    .header {
+      /* Modificar el tamaño vertical del header */
+      padding: 0.1rem 0;
+      max-height: 1000px
+
+    }
+  
+    .logo {
+      /* Modificar el tamaño de la fuente del logo si es necesario */
+      font-size: 1.2em;
+    }
+  
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 24px;
+    color: white;
+    
+  }
+  #icon-close {
+    display: none;
+  }
+  
+  #icon-open {
+    display: inline;
+  }
+  
+  .navigation{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .navigation ul{
+    display: none;
+  }
+  .navigation ul.show{
+    display: block;
+  
+  }
+  
+  .navigation ul li{
+    display: block;
+  }
+  .navigation ul li a{
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  
+  .navigation ul li a:hover {
+    background: #A25A5A;
+  }
+  }
+
+
+  @media only screen and (max-width: 640px){
+  .slogan {
+    padding-top: 100px;
+    height: 45vh; /* Ajusta esta altura según tus necesidades */
+  }
+   
+}

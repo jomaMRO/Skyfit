@@ -1,0 +1,490 @@
+/* ---estilos generales--- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sarabun', sans-serif;
+  background-color: #3a3535;
+  /* Color de fondo para toda la página */
+  color: #333;
+  /* Color de texto predeterminado */
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #A25A5A;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: #F0F0F0;
+}
+
+.seccion-titulo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+}
+
+
+/* ---cabezera--- */
+.header {
+  background-color: #4D789D;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  max-height: 100px;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* .header .logo {
+  font-family: 'Bungee', cursive;
+  color: #7EABD2;
+  
+} */
+
+.header .logo img {
+  width: 105px; /* Ajusta el ancho de la imagen según tus preferencias */
+  max-height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+li#inicio {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .logo {
+  letter-spacing: 15px;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+} */
+
+.menu-icon {
+  display: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.navigation ul li a:hover {
+  background: #A25A5A;
+}
+
+
+
+/* bannerprincipal */
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Esto asegura que el banner ocupe al menos el 100% de la altura de la ventana */
+  position: relative;
+  overflow: hidden;
+}
+
+#video-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner-principal {
+  padding: 3rem 3rem 1.5rem 3rem;
+}
+
+.banner-imagen-desarrollador {
+  width: 500px;
+  height: 300px;
+  margin: 5px;
+}
+
+/* .banner-principal h1 {
+  color: white;
+  margin: 0px 5px 30px 5px;
+} */
+
+.banner-principal h2 {
+  font-family: 'Bungee', cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.banner-inferior {
+  padding-bottom: 75px;
+}
+
+.banner-inferior button {
+  margin: 5px;
+}
+
+.banner-inferior .btn-primary {
+  width: 180px;
+  height: 50px;
+  background-color: #4D789D;
+  border-width: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.banner-inferior .btn-primary:hover {
+  color: white;
+  background-color: #A25A5A;
+}
+
+
+
+/* ---WhatsApp ---*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0);
+  /* Color de fondo del ícono de WhatsApp */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+  z-index: 90;
+}
+
+.whatsapp-icon img {
+  width: 100%;
+  /* La imagen ocupará el 100% del ancho del contenedor */
+  height: 100%;
+  /* La imagen ocupará el 100% del alto del contenedor */
+  object-fit: cover;
+  /* La imagen se ajustará para cubrir todo el contenedor */
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  /* Aumenta el tamaño del ícono al pasar el mouse sobre él */
+}
+
+
+/* ---nuestras clases--- */
+.nuestrascl {
+  padding: 40px 40px 60px 40px;
+}
+.nuestrascl .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nuestrascl .columna {
+  padding: 40px;  /*tamaño de cuadrados */
+  margin-top: 30px;  /*espacio entre cuadrados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Agrega sombreado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  height: 100%;
+  
+}
+
+.nuestrascl .columna:hover {
+  color: white;
+  background-color: #4D789D;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); /* Agrega sombreado */
+}
+
+.nuestrascl i {
+  font-size: 2.5rem;
+  color: #A25A5A;
+  background-color: black;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.nuestrascl-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Establece márgenes para el carrusel y el texto */
+.nuestrascl .carousel {
+  max-width: 800px;
+  margin: 20px auto;
+  /* Centra horizontalmente el carrusel */
+}
+
+/* Ajusta el tamaño del carrusel */
+.carousel-item {
+  height: 100%;
+}
+
+.nuestrascl h2 {
+  /* font-family: 'Urbanist', sans-serif; */
+  font-weight: bold;
+  padding: 10px 10px 40px 10px;
+}
+
+
+/* ---horarios--- */
+
+/* Añade estos estilos para centrar el texto y el carrusel en la sección */
+.horarios .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+
+/* Establece márgenes para el carrusel y el texto */
+.horarios .carousel {
+  max-width: 800px;
+  margin: 20px auto;
+  /* Centra horizontalmente el carrusel */
+}
+
+/* Ajusta el tamaño del carrusel */
+.carousel-item {
+  height: 100%;
+}
+
+/* ubicacion */
+
+/* Centra el contenido vertical y horizontalmente */
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 100px 20px;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.ubicacion .container {
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+
+/* contacto */
+.contacto{
+  background-color: #A25A5A;
+}
+.contacto .container {
+  max-width: 1100px;
+  min-height: 100px;
+  padding: 20px;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background: #4D789D;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px black;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* pie de pagina */
+
+footer {
+  min-height: 300px;
+}
+
+.footer-logo {
+  height: 50%;
+  width: 50%;
+  margin: 10px;
+}
+
+
+h5 {
+  font-size: 1.2rem; /* Tamaño del título Vínculos y Contacto */
+  color: #fff; /* Color del título */
+  margin-bottom: 10px; /* Espacio inferior entre título y lista */
+}
+
+ul {
+  list-style: none; /* Eliminar los puntos de lista */
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+ul li a {
+  text-decoration: none; /* Eliminar subrayado enlaces */
+  color: #aeaeae; /* Color del texto de enlace */
+  transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: #fff; /* Cambio de color al pasar el mouse */
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+  text-align: center; /* Alineación del texto en el centro */
+}
+
+
+/* ---responsive--- */
+@media only screen and (max-width: 900px) {
+
+  .header {
+    /* Modificar el tamaño vertical del header */
+    padding: 0.0rem 0;
+    max-height: 1000px
+  }
+  
+  .logo {
+    /* Modificar el tamaño de la fuente del logo si es necesario */
+    font-size: 1.2em;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0.1rem 1rem;
+    font-size: 24px;
+    color: white;
+
+  }
+
+  #icon-close {
+    display: none;
+  }
+
+  #icon-open {
+    display: inline;
+  }
+
+  .navigation {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .navigation ul.show {
+    display: block;
+
+  }
+
+  .navigation ul li {
+    display: block;
+  }
+
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+
+  .navigation ul li a:hover {
+    background: #A25A5A;
+  }
+
+  .nuestrascl .columna{
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    height: 75%;
+    width: 50%;
+    margin: 10px;
+    justify-content: center; /* Centra horizontalmente */
+  align-items: center; 
+  }
+  
+}
