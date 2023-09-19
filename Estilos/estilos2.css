@@ -10,7 +10,7 @@ body {
 
 .seccion-oscura{
     color: white;
-    background-color: #A25A5A;
+    background-color: black;
 }
   
 .seccion-clara{
@@ -19,10 +19,12 @@ body {
 }
 
 .seccion-titulo{
+  margin-top: 25px;
   font-size: 35px;
   font-family: 'Bungee', cursive;
   font-style: italic;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  color: #A25A5A;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 
